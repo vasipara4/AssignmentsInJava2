@@ -36,8 +36,8 @@ public class MainEx1 {
         System.out.println("Owner: 'John', StoreName: 'Green Store', Account Category: 'abc'");
         StoreAccount test = new StoreAccount("John","Green Store", "abc");
         System.out.println(test);
-        System.out.println("Setting the category to 'basic':");
-        test.changeAccountCategory("basic");
+        System.out.println("Changing the category to 'basic':");
+        System.out.println(test.changeAccountCategory("basic"));
         System.out.println(test);
         System.out.println("Deposit 314.5");
         System.out.println(test.deposit(314.5));

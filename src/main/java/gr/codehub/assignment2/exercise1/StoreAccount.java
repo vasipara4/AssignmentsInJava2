@@ -54,9 +54,12 @@ public class StoreAccount extends Account {
         return accountCategory;
     }
 
-    public void changeAccountCategory(String accountCategory) {
-        if (validCategory(accountCategory))
+    public boolean changeAccountCategory(String accountCategory) {
+        if (validCategory(accountCategory)) {
             this.accountCategory = accountCategory;
+            return true;
+        }
+        return false;
     }
 
 
